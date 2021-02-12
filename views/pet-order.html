@@ -1,0 +1,29 @@
+<include href="views/header.html"></include>
+
+<body>
+<div class="jumbotron">
+    <h1> Order a Pet</h1>
+    <form method="post" action="order2">
+        <div>
+        <label>What Type of pet you want?
+            <input type="text" name="pet" id ="pet">
+        </label>
+        </div><br>
+
+        <div>
+        <label>Please Select a Color:
+            <select class="form-control"  name="color" id="color">
+                <option > select </option>
+                <repeat group="{{@colors}}" value ="{{@colorOption}}">
+                    <option> {{@colorOption}}</option>
+                </repeat>
+            </select>
+        </label>
+        </div><br>
+
+        <input class="btn btn-primary active" type="submit" value="Place Order">
+    </form>
+    </div>
+
+</body>
+</html>
