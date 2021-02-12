@@ -22,6 +22,6 @@ function getSizes(){
  * @return array
  */
 function getAccessories(){
-    $accs = array("bow", "shoes", "rain jacket", "sweater");
-    return $accs;
+    $accessories = array("bow", "shoes", "rain jacket", "sweater");
+    return $accessories;
 }
