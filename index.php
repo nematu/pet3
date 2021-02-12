@@ -29,17 +29,15 @@ $f3->route('GET|POST /order', function($f3) {
         {
             // first condition
         } else
-            {
+        {
             // second condition
         }
     }
-
     //if it doesnt work with conditional
     $f3->set('colors', getColors());
 
     $view = new Template();
     echo $view->render('views/pet-order.html');
-
 });
 
 $f3->route('GET|POST /order2', function($f3){
