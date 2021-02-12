@@ -21,7 +21,7 @@
 
            <h5>Pet Accessories:</h5>
             <repeat group="{{ @accessories }}" value="{{ @accessoryOption }}">
-                <label><input type="checkbox" name="accessories" id = "accessory" value="{{ @accessoryOption }}"> {{ @accessoryOption }} </label><br>
+                <label><input type="checkbox" name="accessories[]" id = "accessory" value="{{ @accessoryOption }}"> {{ @accessoryOption }} </label><br>
             </repeat>
         </div>
         <br>
