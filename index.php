@@ -64,8 +64,9 @@ $f3->route('POST /summary', function() {
     if(isset($_POST['size'])){
         $_SESSION['size'] = $_POST['size'];
     }
+
     if(isset($_POST['accessories'])){
-        $_SESSION['accessories'] = $_POST['accessories'];
+        $_SESSION['accessories'] = implode(', ', $_POST['accessories']);
     }
 
     if (isset($_POST['petName'])) {
